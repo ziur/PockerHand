@@ -1,6 +1,6 @@
 package com.jalasoft.jaggaer;
 
-interface PokerHand {
+interface PokerHandRecognizer {
 	boolean matchHand(Hand hand);
 }
 

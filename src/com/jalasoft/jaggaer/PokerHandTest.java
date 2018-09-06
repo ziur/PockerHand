@@ -1,6 +1,5 @@
 package com.jalasoft.jaggaer;
 
-import java.io.StringBufferInputStream;
 import java.io.StringReader;
 
 public class PokerHandTest {
@@ -17,6 +16,6 @@ public class PokerHandTest {
 	}
 
 	private static void assertTrue(String test, boolean equals) {
-		System.out.println(test + (equals ? "[Pass]": "[Fail]"));
+		System.out.println(test + (equals ? "[Pass]" : "[Fail]"));
 	}
 }

@@ -1,11 +1,17 @@
 package com.jalasoft.jaggaer;
 
 public enum PokerHands {
-	ROYAL_FLUSH( new RoyalFlushHand());
+	ROYAL_FLUSH( new RoyalFlushHandRecognizer());
 
-	private final PokerHand pokerHand;
+	private final PokerHandRecognizer recognizer;
 
-	PokerHands(PokerHand pokerHand) {
-		this.pokerHand = pokerHand;
+	PokerHands(PokerHandRecognizer recognizer) {
+		this.recognizer = recognizer;
 	}
+
+	public boolean matchHand(Hand hand) {
+		return recognizer.matchHand(hand);
+	}
+
+
 }
