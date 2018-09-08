@@ -1,6 +1,5 @@
 package com.jalasoft.jaggaer;
 
-import javax.smartcardio.Card;
 import java.io.Reader;
 import java.util.List;
 

@@ -19,7 +19,6 @@ public class Hand {
 		for (PokerHands pokerHands : PokerHands.values()) {
 
 		}
-
 	}
 
 	public Collection<Card> getCards() {
