@@ -21,6 +21,7 @@ public class HandGameRecognizer {
             if (isStraigth && index + 1 < cards.size() && card.getRank().getValue() + 1 != cards.get(index+1).getRank().getValue()) {
                 isStraigth = card.getRank() == Rank.FOUR && cards.get(index+1).getRank() == Rank.ACE;
             }
+            index++;
         }
 
 
@@ -38,7 +39,7 @@ public class HandGameRecognizer {
                 break;
             }
         }
-        return handGame
+        return handGame;
     }
 
 }

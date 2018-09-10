@@ -4,21 +4,27 @@ package com.jalasoft.jaggaer;
  * Created by ale on 9/8/2018.
  */
 public class HandGame {
-    public static final HandGame NO_MATCH = new HandGame(null, 0);
+    public static final HandGame NO_MATCH = new HandGame(null, null);
     private final PokerHands pokerHand;
-    private final int weight;
+    private Rank rank;
+
 
     public HandGame(PokerHands pokerHand, Rank rank) {
 
         this.pokerHand = pokerHand;
-        this.weight = rank;
+
+        this.rank = rank;
     }
 
     public PokerHands getPokerHand() {
         return pokerHand;
     }
 
-    public int getWeight() {
-        return weight;
+    @Override
+    public String toString() {
+        return "HandGame{" +
+                "pokerHand=" + pokerHand +
+                ", rank=" + rank +
+                '}';
     }
 }

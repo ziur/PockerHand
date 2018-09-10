@@ -1,31 +1,28 @@
 package com.jalasoft.jaggaer;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Hand {
-	private final LinkedList<Card> cards;
+    private final LinkedList<Card> cards;
+    private HandGame handGame;
 
-	public Hand(List<Card> cards) {
-		this.cards = new LinkedList<>(cards);
-		Collections.sort(cards);
+    public Hand(List<Card> cards) {
+        this.cards = new LinkedList<>(cards);
+        identifyHand();
+    }
 
-		identifyHand();
-	}
+    private void identifyHand() {
+        HandGameRecognizer recognizer = new HandGameRecognizer();
+        handGame = recognizer.matchHand(cards);
 
-	private void identifyHand() {
-		for (PokerHands pokerHands : PokerHands.values()) {
+    }
 
-		}
-	}
+    public LinkedList<Card> getCards() {
+        return cards;
+    }
 
-	public Collection<Card> getCards() {
-		return null;
-	}
-
-	public Card getLowestCard() {
-		return cards.getFirst();
-	}
+    public HandGame getHandGame() {
+        return handGame;
+    }
 }

@@ -4,7 +4,12 @@ public class Card implements Comparable<Card> {
 	Rank rank;
 	Suit suit;
 
-	public Rank getRank() {
+	public Card(Suit suit, Rank rank) {
+		this.suit = suit;
+		this.rank = rank;
+	}
+
+    public Rank getRank() {
 		return rank;
 	}
 

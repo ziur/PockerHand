@@ -8,7 +8,7 @@ import java.util.List;
 public class PokerMatcher implements PokerHandMatcher {
     @Override
     public HandGame matchHand(HandInfo handInfo) {
-        if (handInfo.getCardsBySuit().size() != 2) {
+        if (handInfo.getCardsByRank().size() != 2) {
             return HandGame.NO_MATCH;
         }
 
@@ -17,7 +17,7 @@ public class PokerMatcher implements PokerHandMatcher {
         List<Card> cards2 = values.next();
         Card maxCard = cards1.size() > cards2.size() ? cards1.get(0) : cards2.get(0);
 
-        return new HandGame(PokerHands.ROYAL_FLUSH, maxCard.getRank());
+        return new HandGame(PokerHands.POKER, maxCard.getRank());
 
     }
 }

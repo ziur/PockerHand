@@ -17,8 +17,12 @@ public class PokerGame {
 	}
 
 	public PokerResult getResults() {
+
+
+
 		for (Player player : players) {
-			player.getHand();
+			System.out.println(player.getHand().getHandGame());
+
 		}
 
 		return null;
