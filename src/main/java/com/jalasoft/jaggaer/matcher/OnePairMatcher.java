@@ -1,6 +1,11 @@
 package com.jalasoft.jaggaer.matcher;
 
-import com.jalasoft.jaggaer.*;
+import com.jalasoft.jaggaer.Card;
+import com.jalasoft.jaggaer.HandGame;
+import com.jalasoft.jaggaer.HandInfo;
+import com.jalasoft.jaggaer.PokerHandMatcher;
+import com.jalasoft.jaggaer.PokerHands;
+import com.jalasoft.jaggaer.Rank;
 
 import java.util.List;
 import java.util.Map;
@@ -8,10 +13,10 @@ import java.util.Map;
 /**
  * Created by ale on 9/9/2018.
  */
-public class TwoPairsMatcher implements PokerHandMatcher {
+public class OnePairMatcher implements PokerHandMatcher {
     @Override
     public HandGame matchHand(HandInfo handInfo) {
-        if (handInfo.getCardsBySuit().size() != 3 && handInfo.getCardsByRank().size() != 3) {
+        if (handInfo.getCardsByRank().size() != 4) {
             return HandGame.NO_MATCH;
         }
 
