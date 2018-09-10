@@ -20,7 +20,11 @@ public class HandGame {
         return pokerHand;
     }
 
-    @Override
+	public Rank getRank() {
+		return rank;
+	}
+
+	@Override
     public String toString() {
         return "HandGame{" +
                 "pokerHand=" + pokerHand +

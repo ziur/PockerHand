@@ -3,7 +3,7 @@ package com.jalasoft.jaggaer;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Hand {
+public class Hand implements Comparable<Hand> {
     private final LinkedList<Card> cards;
     private HandGame handGame;
 
@@ -25,4 +25,22 @@ public class Hand {
     public HandGame getHandGame() {
         return handGame;
     }
+
+
+	@Override
+	public int compareTo(Hand o) {
+    	int compareGame = Integer.compare(handGame.getPokerHand().ordinal(), o.handGame.getPokerHand().ordinal());
+
+		if (compareGame == 0) {
+			return Rank.compare(handGame.getRank(), o.handGame.getRank());
+		}
+		return compareGame;
+	}
+
+	@Override
+	public String toString() {
+		return "Hand{" +
+				"handGame=" + handGame +
+				'}';
+	}
 }

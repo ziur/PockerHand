@@ -25,4 +25,12 @@ public class Player {
 	public Hand getHand() {
 		return hand;
 	}
+
+	@Override
+	public String toString() {
+		return "Player: '" +
+				name + '\'' +
+				" - " + hand
+				;
+	}
 }

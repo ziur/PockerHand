@@ -2,7 +2,7 @@ package com.jalasoft.jaggaer.matcher;
 
 import com.jalasoft.jaggaer.*;
 
-public class RoyalFlushHandMatcher implements PokerHandMatcher {
+public class RoyalFlushMatcher implements PokerMatcher {
     @Override
     public HandGame matchHand(HandInfo handInfo) {
         if (handInfo.getCardsBySuit().size() > 1 || !handInfo.isStraight() || handInfo.getLastCard().getRank() != Rank.ACE ) {

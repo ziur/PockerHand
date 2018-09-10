@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by ale on 9/9/2018.
  */
-public class TwoPairsMatcher implements PokerHandMatcher {
+public class TwoPairsMatcher implements PokerMatcher {
     @Override
     public HandGame matchHand(HandInfo handInfo) {
         if (handInfo.getCardsBySuit().size() != 3 && handInfo.getCardsByRank().size() != 3) {
