@@ -1,11 +1,11 @@
-package com.jalasoft.jaggaer.matcher;
+package com.jalasoft.poker.matcher;
 
-import com.jalasoft.jaggaer.Card;
-import com.jalasoft.jaggaer.HandGame;
-import com.jalasoft.jaggaer.HandInfo;
-import com.jalasoft.jaggaer.PokerHandMatcher;
-import com.jalasoft.jaggaer.PokerHands;
-import com.jalasoft.jaggaer.Rank;
+import com.jalasoft.poker.Card;
+import com.jalasoft.poker.HandGame;
+import com.jalasoft.poker.HandInfo;
+import com.jalasoft.poker.PokerHandMatcher;
+import com.jalasoft.poker.PokerHands;
+import com.jalasoft.poker.Rank;
 
 import java.util.List;
 import java.util.Map;

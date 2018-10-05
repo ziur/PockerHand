@@ -1,6 +1,6 @@
-package com.jalasoft.jaggaer.matcher;
+package com.jalasoft.poker.matcher;
 
-import com.jalasoft.jaggaer.*;
+import com.jalasoft.poker.*;
 
 public class RoyalFlushMatcher implements PokerHandMatcher {
     @Override

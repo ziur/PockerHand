@@ -1,20 +1,25 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class PokerGame {
+	private Deck deck;
 
 	private List<Player> players;
 
-	public PokerGame() {
+	public PokerGame(Deck deck) {
 		players = new ArrayList<>();
+		this.deck = deck;
+
 	}
 
 	public void addHand(Player player) {
 		players.add(player);
 	}
+
+
 
 	public PokerResult getResults() {
 

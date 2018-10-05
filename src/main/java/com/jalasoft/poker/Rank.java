@@ -1,4 +1,4 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
 /**
  * Created by ale on 9/8/2018.

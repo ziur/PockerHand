@@ -1,4 +1,4 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
 public class Card implements Comparable<Card> {
 	Rank rank;

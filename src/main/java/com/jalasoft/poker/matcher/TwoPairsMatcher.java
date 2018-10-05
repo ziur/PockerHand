@@ -1,6 +1,6 @@
-package com.jalasoft.jaggaer.matcher;
+package com.jalasoft.poker.matcher;
 
-import com.jalasoft.jaggaer.*;
+import com.jalasoft.poker.*;
 
 import java.util.List;
 import java.util.Map;

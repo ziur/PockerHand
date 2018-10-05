@@ -1,15 +1,16 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by ale on 9/8/2018.
  */
 class PokerGameTest {
+
+
     @Test
     void royalFlushWinner() {
+    	Deck deck =
 		PokerGame pokerGame = new PokerGame();
 		PokerHandBuilder builder = new StringInputBuilder();
 		Player juan = Player.create("Juan", builder.getHand("AH KH QH JH 10H"));

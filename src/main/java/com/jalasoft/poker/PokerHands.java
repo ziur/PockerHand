@@ -1,8 +1,8 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
-import com.jalasoft.jaggaer.matcher.PokerMatcher;
-import com.jalasoft.jaggaer.matcher.RoyalFlushMatcher;
-import com.jalasoft.jaggaer.matcher.TwoPairsMatcher;
+import com.jalasoft.poker.matcher.PokerMatcher;
+import com.jalasoft.poker.matcher.RoyalFlushMatcher;
+import com.jalasoft.poker.matcher.TwoPairsMatcher;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,9 +15,9 @@ public enum PokerHands {
     ;
 
     private static List<PokerHands> CHAIN = Arrays.asList(values());
-    private final com.jalasoft.jaggaer.PokerHandMatcher handMatcher;
+    private final com.jalasoft.poker.PokerHandMatcher handMatcher;
 
-    PokerHands(com.jalasoft.jaggaer.PokerHandMatcher handMatcher) {
+    PokerHands(com.jalasoft.poker.PokerHandMatcher handMatcher) {
         this.handMatcher = handMatcher;
     }
 
@@ -25,7 +25,7 @@ public enum PokerHands {
         return CHAIN.listIterator();
     }
 
-    public com.jalasoft.jaggaer.PokerHandMatcher getHandMatcher() {
+    public com.jalasoft.poker.PokerHandMatcher getHandMatcher() {
         return handMatcher;
     }
 

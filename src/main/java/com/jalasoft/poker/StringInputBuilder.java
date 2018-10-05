@@ -1,7 +1,5 @@
-package com.jalasoft.jaggaer;
+package com.jalasoft.poker;
 
-import java.io.Reader;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 
